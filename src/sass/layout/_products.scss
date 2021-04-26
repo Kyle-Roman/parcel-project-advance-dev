@@ -341,7 +341,6 @@
   }
 }
 
-
 .product__popup .product__close:hover {
   color: var(--background-color-accent);
 }
@@ -368,7 +367,13 @@
 }
 
 .product__icon {
+  visibility: visible;
   width: 10px;
   height: 10px;
   fill: var(--accent-color-main);
+}
+
+.arrow-about {
+  visibility: hidden;
+  position: absolute;
 }
