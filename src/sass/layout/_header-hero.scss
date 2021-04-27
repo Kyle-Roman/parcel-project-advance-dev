@@ -104,6 +104,9 @@
     margin-right: 15px;
   }
 }
+.header .hidden {
+  display: none;
+}
 
 .hero__anchor-button {
   display: flex;
@@ -261,6 +264,7 @@
   background-color: var(--accent-text-color);
   border-color: transparent;
   cursor: pointer;
+
   @media screen and (min-width: 1280px) {
     bottom: -50px;
     width: 26px;
