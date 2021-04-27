@@ -79,6 +79,7 @@
 .header .modal-btn {
   @media screen and (min-width: 768px) {
     margin-top: 38px;
+    margin-right: 50px;
     width: 160px;
     font-family: var(--main-text);
     font-weight: bold;
@@ -172,12 +173,9 @@
   left: 50%;
   transform: translateX(-50%);
 
-  // position: absolute;
-  // bottom: 0;
-  // left: 112%;
   @media screen and (min-width: 768px) {
     width: 324px;
-    left: 83%;
+    left: 80%;
   }
   @media screen and (min-width: 1280px) {
     right: -45px;
@@ -509,7 +507,7 @@
   right: 20px;
   @media screen and (min-width: 768px) {
     top: 52px;
-    right: 190px;
+    right: 10px;
   }
 }
 .mobile-menu__close-button {
