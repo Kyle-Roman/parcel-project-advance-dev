@@ -236,7 +236,7 @@
   content: "";
 position: absolute;
 border: none;
-border-radius: inherit;
+border-radius: 50%;
 background-color: rgba(250, 145, 158, 0.367);
 z-index: -1;
 top: -12%; 
@@ -277,8 +277,8 @@ left: 28%;
 &:focus::after{
   width: 85px;
   height: 85px;
-top: -7%; 
-left: -7%;
+top: -10%; 
+left: -10%;
 }
 &._active{
   animation-duration: 1250ms;
