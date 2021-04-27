@@ -90,12 +90,54 @@
     position: relative;
   }
 }
-.hero .modal-btn {
-  height: 24px;
+.hero__buttons-item:not(:last-child) {
+  margin-right: 8px;
+  & .link {
+    background-color: var(--accent-color-main);
+    color: var(--accent-text-color);
+    &:hover,
+    &:focus {
+      background-color: #c7133e;
+    }
+  }
   @media screen and (min-width: 1280px) {
+    margin-right: 15px;
+  }
+}
+
+.hero__anchor-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 9px;
+  padding-right: 9px;
+  min-width: 62px;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  cursor: pointer;
+  background-color: var(--accent-text-color);
+  color: var(--accent-color-main);
+  height: 24px;
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    color: var(--accent-color-main);
+  }
+
+  @media screen and (min-width: 1280px) {
+    min-width: 102px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
     height: 40px;
   }
 }
+
 .hero .container {
   overflow: hidden;
   position: relative;
@@ -290,21 +332,6 @@
 }
 .hero__buttons {
   display: flex;
-}
-
-.hero__buttons-item:not(:last-child) {
-  margin-right: 8px;
-  & .modal-btn {
-    background-color: var(--accent-color-main);
-    color: var(--accent-text-color);
-    &:hover,
-    &:focus {
-      background-color: #c7133e;
-    }
-  }
-  @media screen and (min-width: 1280px) {
-    margin-right: 15px;
-  }
 }
 
 .navigation-list {
