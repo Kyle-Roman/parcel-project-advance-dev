@@ -400,6 +400,7 @@
   font-size: 14px;
   text-align: center;
 
+<<<<<<< HEAD
   padding: 20px 40px;
   top: 0;
   left: 0;
@@ -413,6 +414,14 @@
   transition-property: translateY(100%);
   transition-timing-function: linear;
   transition-duration: 250ms;
+=======
+.product__popup .product__close:hover {
+  color: var(--background-color-accent);
+}
+.product__popup .product__content {
+  max-height: 30%;
+  overflow: auto;
+>>>>>>> customer-rew
 }
 
 .products__item .product__link:hover,
@@ -427,3 +436,18 @@
     transform: translateY(0);
   }
 }
+<<<<<<< HEAD
+=======
+
+.product__icon {
+  visibility: visible;
+  width: 10px;
+  height: 10px;
+  fill: var(--accent-color-main);
+}
+
+.arrow-about {
+  visibility: hidden;
+  position: absolute;
+}
+>>>>>>> customer-rew
