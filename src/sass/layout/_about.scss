@@ -7,6 +7,7 @@
   background-size: contain;
   background-position: bottom;
   background-blend-mode: multiply;
+  padding-top: 125px;
 
   @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .about {
@@ -81,7 +82,6 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 125px;
   margin-bottom: 15px;
   margin-left: auto;
   margin-right: auto;
@@ -215,8 +215,4 @@
       margin-top: 45px;
     }
   }
-}
-
-.about-btn__icon {
-  margin-left: 13px;
 }
