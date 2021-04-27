@@ -1,11 +1,6 @@
 <header class="header" id="home">
   <div class="overlay"></div>
   <div class="container">
-    <button type="button" class="menu-button" data-menu-button>
-      <svg class="menu-icon">
-        <use href="./images/icons.svg#Burger_menu" aria-label="open mobile menu"></use>
-      </svg>
-    </button>
     <div class="logo-wrapper">
       <a class="logo link" href="https://kyle-roman.github.io/parcel-project-advance-dev/">
         <img class="logo-img animate__animated animate__flip" src="./images/mobile/logo/logo1.png" alt="logo image" width="199" />
@@ -30,9 +25,17 @@
         </li>
       </ul>
     </nav>
-    <button class="modal-btn" type="button" data-modal-open>Buy now ></button>
+    <div class="burger-and-button" burger-button-display>
+      <button class="modal-btn" type="button" data-modal-open>Buy now ></button>
+      <button type="button" class="menu-button" data-menu-button>
+        <svg class="menu-icon">
+          <use href="./images/icons.svg#Burger_menu" aria-label="open mobile menu"></use>
+        </svg>
+      </button>
+    </div>
+
     <div class="mobile-menu" data-menu>
-      <button type="button" class="mobile-menu__close-button" data-menu-close>
+      <button id="hider1" type="button" class="mobile-menu__close-button" data-menu-close>
         <svg class="mobile-menu__close-icon">
           <use href="./images/icons.svg#close_icon"></use>
         </svg>
