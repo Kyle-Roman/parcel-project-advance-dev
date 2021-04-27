@@ -104,6 +104,9 @@
     margin-right: 15px;
   }
 }
+.header .hidden {
+  display: none;
+}
 
 .hero__anchor-button {
   display: flex;
@@ -162,11 +165,19 @@
   }
 }
 .hero__main-image-wrapper {
+  z-index: -2;
   position: absolute;
+  width: 347px;
   bottom: 0;
-  left: 112%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  // position: absolute;
+  // bottom: 0;
+  // left: 112%;
   @media screen and (min-width: 768px) {
-    right: -45px;
+    width: 324px;
+    left: 83%;
   }
   @media screen and (min-width: 1280px) {
     right: -45px;
@@ -253,6 +264,7 @@
   background-color: var(--accent-text-color);
   border-color: transparent;
   cursor: pointer;
+
   @media screen and (min-width: 1280px) {
     bottom: -50px;
     width: 26px;
