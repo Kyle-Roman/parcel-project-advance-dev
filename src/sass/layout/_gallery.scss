@@ -202,7 +202,7 @@
   &:hover,
   &:focus {
     // cursor: pointer;
-    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .3));
+    filter: drop-shadow(0px 6px 5px rgba(0, 0, 0, .3));
    transform: scale(1.4);
   z-index: 1;
   }
@@ -342,11 +342,11 @@ right:0;
   }
   }
 
-@media screen and (max-width: 767px){
-.gallery .container{
-  width: 286px;
-}
-}
+// @media screen and (max-width: 767px){
+// .gallery .container{
+//   width: 286px;
+// }
+// }
 @media screen and (min-width: 768px) {
   .gallery {
     background: linear-gradient(to bottom, #fff5f6 55%, #ffffff 55%);
