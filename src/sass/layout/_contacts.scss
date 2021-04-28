@@ -310,6 +310,7 @@
     }
   }
 }
+
 .buttonlis__locations {
   font-family: var(--main-font);
   font-weight: 700;
@@ -349,6 +350,20 @@
   color: var(--accent-color-main);
   background-color: var(--accent-text-color);
 }
+
+.buttonlis__franchise:hover,
+.buttonlis__franchise:focus {
+  animation-name: pulse;
+  animation-duration: 1000ms;
+  animation-iteration-count: 2;
+}
+.buttonlis__locations:hover,
+.buttonlis__locations:focus {
+  animation-name: pulse;
+  animation-duration: 1000ms;
+  animation-iteration-count: 2;
+}
+
 .buttonlis__icon--red {
   width: 10px;
   height: 14px;
