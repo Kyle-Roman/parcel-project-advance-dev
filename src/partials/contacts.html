@@ -120,26 +120,15 @@
 </div>
 <div  class="backdrop backdrop is-hidden" data-backdrop>
     <div class="backdrop__modal">
+<<<<<<< HEAD
         <img src="../images/map.jpg" width="280" alt="maps">
          <button class="modal__close" data-close-modal aria-label="Map close button">
             Close
         </button>
+=======
+        <img src="./images/map3.jpg" width="280" alt="maps">
+        <button class="modal__close" data-close-modal aria-label="Map close button">Close</button>
+>>>>>>> msscontacts
     </div>
 </div>
 </section>
-<script>
-    const refs = {
-        openModalBtn: document.querySelector('[data-open-modal]'),
-        closeModalBtn: document.querySelector('[data-close-modal]'),
-        backdrop: document.querySelector('[data-backdrop]'),
-    };
-
-    refs.openModalBtn.addEventListener('click', toggleModal);
-    refs.closeModalBtn.addEventListener('click', toggleModal);
-
-
-    function toggleModal() {
-        refs.backdrop.classList.toggle('is-hidden');
-    }
-
-</script>
