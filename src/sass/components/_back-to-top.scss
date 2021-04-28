@@ -10,11 +10,26 @@
 
   display: none;
 
+  animation: back-to-top 600ms 4 alternate ease-in-out;
+
   transition: background-color 250ms var(--timing-function);
 
   &:hover,
   &:focus {
     background-color: var(--accent-color-secondary);
+
+    animation: back-to-top 600ms infinite alternate ease-in-out;
+  }
+
+  @keyframes back-to-top {
+    0% {
+      transform: translateY(0);
+      opacity: 0.4;
+    }
+    100% {
+      transform: translateY(-0.4em);
+      opacity: 0.9;
+    }
   }
 
   &::before,
