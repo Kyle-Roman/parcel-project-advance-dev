@@ -59,6 +59,7 @@
   padding-left: 20px;
   padding-right: 20px;
   margin: 0%;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   &:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -374,31 +375,23 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  min-height: 581px;
+  width: 200px;
+  min-height: 80px;
   background-color: var(--accent-text-color);
   padding: 10px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   @media screen and (min-width: 768px) {
-    width: 600px;
-    height: 400px;
+    width: 420px;
+    min-height: 300px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 560px;
+    min-height: 400px;
   }
 }
-.backdrop__modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  min-height: 400px;
-  background-color: var(--accent-text-color);
-  padding: 20px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
+
 .modal__close {
   margin-right: auto;
   margin-left: auto;
