@@ -78,6 +78,7 @@
 }
 .header .modal-btn {
   @media screen and (min-width: 768px) {
+    display: flex;
     margin-top: 38px;
     margin-right: 50px;
     width: 160px;
@@ -86,9 +87,11 @@
     font-size: 16px;
     line-height: 1.31;
     text-align: center;
+    margin-bottom: 5px;
   }
   @media screen and (min-width: 1280px) {
     position: relative;
+    margin-right: 0;
   }
 }
 .hero__buttons-item:not(:last-child) {
@@ -381,7 +384,7 @@
   }
 }
 .mobile-menu .modal-btn {
-  display: block;
+  display: flex;
   width: 209px;
   height: 44px;
   font-weight: bold;
@@ -446,10 +449,6 @@
   .hero__image-woman {
     display: block;
   }
-  .header .modal-btn {
-    display: block;
-    margin-bottom: 5px;
-  }
 }
 @media screen and (min-width: 1280px) {
   .counters-list {
@@ -507,7 +506,6 @@
   right: 20px;
   @media screen and (min-width: 768px) {
     top: 52px;
-    right: 10px;
   }
 }
 .mobile-menu__close-button {
