@@ -18,6 +18,12 @@
   font-size: 12px;
   text-align: right;
   color: var(--secondary-text-color);
+  opacity: 0;
+  &._active{
+    opacity: 1;
+    animation-name: tada;
+    animation-duration: 1500ms;
+  }
 
   &__tel {
     color: var(--accent-color-main);

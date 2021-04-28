@@ -9,6 +9,7 @@
   width: 286px;
   height: 122px;
   margin: 0 auto;
+  
 }
 
 .gallery__visual-img {
@@ -21,7 +22,7 @@
 .grid-item {
   width: 40px;
   height: 40px;
-  filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, .3));
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, .3));
   opacity: 0;
   border: thick double rgba(255, 238, 240, 0.408);
   border-radius: 50%;
@@ -29,7 +30,7 @@
   &:hover,
   &:focus {
     // cursor: pointer;
-  filter: drop-shadow(0px 6px 5px rgba(0, 0, 0, .3));
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, .3));
    transform: scale(1.4);
   z-index: 1;
   }
@@ -85,8 +86,8 @@ opacity: 1;
 
 .grid-item--box1{
 position: absolute;
-top: 35%;
-left: 0;
+top: 33%;
+left: 4%;
 }
 
 .grid-item--box2{position: absolute;
@@ -136,20 +137,13 @@ right: 14.3%;
 }
 
 .grid-item--box6 {  position: absolute;
-  width: 45px;
-  height: 45px;
-top: 25%;
-right:0;
-&:hover::after,
-&:focus::after{
-  width: 50px;
-  height: 50px;
-}
+ top: 30%;
+right:6%;
 &._active{
   animation-duration: 1120ms;
 }
 }
-.grid-item--box7 { position: absolute; bottom: 19%; left: 15%;
+.grid-item--box7 { position: absolute; bottom: 15%; left: 15%;
   &._active{
     animation-duration: 1520ms;
   }
@@ -159,18 +153,22 @@ right:0;
     animation-duration: 1220ms;
   }
      }
-.grid-item--box9 { position: absolute; bottom: 16%; right: 32%; 
+.grid-item--box9 { position: absolute; bottom: 16%; right: 38%; 
   &._active{
     animation-duration: 1320ms;
   }
     }
-.grid-item--box10 { position: absolute; bottom: 24%; right: 16%; 
+.grid-item--box10 { position: absolute; bottom: 24%; right: 20%; 
   &._active{
     animation-duration: 1520ms;
   }
   }
 
-
+@media screen and (max-width: 419px){
+.gallery__visual {
+  left: -5px;
+  }
+}
 @media screen and (min-width: 420px){
   .gallery__visual {
     height: 165px;
@@ -178,8 +176,8 @@ right:0;
     left: 0;
   }
   .grid-item {
-    width: 53px;
-    height: 53px;
+    width: 50px;
+    height: 50px;
     }
     .grid-item--box1,
     .grid-item--box2,
@@ -193,10 +191,10 @@ right:0;
     .grid-item--box10{
       &:hover::after,
       &:focus::after{
-      top: -23%; 
-      left: -23%;
-      height: 63px;
-      width: 63px;
+      top: -15%; 
+      left: -15%;
+      height: 53px;
+      width: 53px;
       }
   }
       
@@ -204,12 +202,22 @@ right:0;
       &:hover::after,
       &:focus::after{
       top: -15%; 
-    left: -15%;
+    left: -10%;
     height: 126px;
     width: 126px;
         }
       }
-
+      .grid-item--box6 {  
+        width: 40px;
+        height: 40px;
+      &:hover::after,
+      &:focus::after{
+        top: -20%; 
+        left: -20%;
+        width: 43px;
+        height: 43px;
+      }
+           }
 
 }
 @media screen and (min-width: 768px) {
@@ -224,8 +232,8 @@ right:0;
     left: 0;
   }
   .grid-item {
-    width: 84px;
-    height: 84px;
+    width: 80px;
+    height: 80px;
     }
 
   .grid-item--box1,
@@ -240,14 +248,18 @@ right:0;
   .grid-item--box10{
     &:hover::after,
     &:focus::after{
-    top: -12%; 
-    left: -12%;
-    height: 94px;
-    width: 94px;
+    top: -15%; 
+    left: -15%;
+    height: 90px;
+    width: 90px;
     
         }
 }
     
+.grid-item--box2 { 
+  top: 13%;
+  left: 15%;
+}
   
   .grid-item--box3 { width: 170px; height: 170px;
     &:hover::after,
@@ -264,18 +276,21 @@ right:0;
     width:87px;top: 16%; right: 29%;
     &:hover::after,
     &:focus::after{
+      top: -12%; 
+      left: -12%;
     height: 97px;
   width: 97px;
       }}
-  .grid-item--box5 { top: 8%; right: 14.4%;}
+  .grid-item--box5 { top: 5%; right: 15%;}
   
-  .grid-item--box7 {  bottom: 21%;}
-  .grid-item--box9 {  bottom: 18%; right: 29%; }
+  .grid-item--box7 {  bottom: 19%; left: 16%;}
+  .grid-item--box9 {  bottom: 18%; right: 35%; }
   .grid-item--box10 {  height: 90px;
-    width: 90px; bottom: 24%; right: 13%;
+    width: 90px; bottom: 24%; right: 18.5%;
     &:hover::after,
     &:focus::after{
-     
+      top: -12%; 
+      left: -12%;
   height: 100px;
   width: 100px;
       }}
@@ -304,8 +319,8 @@ right:0;
     .grid-item--box10{
       &:hover::after,
       &:focus::after{
-      height: 150px;
-      width: 150px;
+      height: 155px;
+      width: 155px;
       }
   }
     
@@ -349,10 +364,13 @@ width: 155px;
   .grid-item--box5 { 
   top: 8%;
   }
+  .grid-item--box6 {  
+    top: 30%;
+   right:3%;}
   
   .grid-item--box7 {  
-    bottom: 21%; 
-    left: 14.5%;
+    bottom: 20%; 
+    left: 18%;
     width: 135px;
     height: 135px;
     &:hover::after,
@@ -374,5 +392,5 @@ width: 155px;
        height: 170px;
   width: 170px;
       }}
-  .grid-item--box10 {  bottom: 27%;}
+  .grid-item--box10 {  bottom: 25%; right: 19%;}
 }
