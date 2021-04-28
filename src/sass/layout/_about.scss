@@ -131,6 +131,9 @@
   width: 280px;
   margin: 0 auto;
 
+  animation-name: zoomIn;
+  animation-duration: 1000ms;
+
   @media screen and (min-width: 768px) {
     width: 340px;
     float: left;
