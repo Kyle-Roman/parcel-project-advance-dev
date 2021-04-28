@@ -1,12 +1,15 @@
 .advantages {
   background-color: var(--background-color-main);
 }
+
 .advantages-list {
   margin-top: -38px;
 }
+
 .advantages-list__item {
   margin-top: 38px;
 }
+
 .milk::before {
   content: '';
   display: block;

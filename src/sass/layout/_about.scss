@@ -8,6 +8,7 @@
   background-position: bottom;
   background-blend-mode: multiply;
   padding-top: 125px;
+  padding-bottom: 40px;
 
   @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .about {
@@ -174,6 +175,7 @@
 
 .about__subtext + .about__subtext {
   margin-top: 8px;
+  margin-bottom: 35px;
 }
 
 .about-button {
